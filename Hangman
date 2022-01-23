@@ -1,10 +1,10 @@
-secretword = "jerryy"
+secretword = "jerry"
 
 lettersguessed = ""
 
 wronglettercount = 0
 
-maxmistakes = 6
+maxmistakes = 5
 
 while maxmistakes > 0:
 
@@ -36,10 +36,10 @@ while maxmistakes > 0:
 
     if wronglettercount == 0:
 
-        print(f"Finish, the secret word was: {secretword}. you win")
+        print(f"u WON, the secret word was: {secretword}. you win")
 
         break
 
 else:
 
-    print("u lost,wanna try again?")
+    print("u LOST,wanna try again?")
