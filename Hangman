@@ -12,13 +12,13 @@ while maxmistakes > 0:
 
     if guess in secretword:
 
-        print (f"correct ! There are no or more {guess} in the secret word.")
+        print (f" Right answer ,There are no or more {guess} in the secret word.")
 
     else:
 
         maxmistakes -= 1
 
-        print(f"Incorrect. There are no {guess} in the secret word.{maxmistakes} turn(s) left.")
+        print(f"Incorrect answer, There are no {guess} in the secret word.{maxmistakes} turn(s) left.")
 
     lettersguessed = lettersguessed + guess
 
