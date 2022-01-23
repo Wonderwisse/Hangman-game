@@ -1,0 +1,45 @@
+secretword = "jerryy"
+
+lettersguessed = ""
+
+wronglettercount = 0
+
+maxmistakes = 6
+
+while maxmistakes > 0:
+
+    guess = input("enter a letter: ")
+
+    if guess in secretword:
+
+        print (f"correct ! There are no or more {guess} in the secret word.")
+
+    else:
+
+        maxmistakes -= 1
+
+        print(f"Incorrect. There are no {guess} in the secret word.{maxmistakes} turn(s) left.")
+
+    lettersguessed = lettersguessed + guess
+
+    for letter in secretword:
+
+        if letter in lettersguessed:
+
+            print(f"{letter}", end="")
+
+        else:
+
+            print("_", end="")
+
+            wronglettercount += 1
+
+    if wronglettercount == 0:
+
+        print(f"Finish, the secret word was: {secretword}. you win")
+
+        break
+
+else:
+
+    print("u lost,wanna try again?")
